@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Senhas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <div class="logo">🔐</div>
+    <h1>Gerador de senhas</h1>
+    <p class="subtitle">Gere instantaneamente uma senha aleatória e segura</p>
+
+    <section class="password-box">
+      <span>Senha</span>
+      <strong id="password">ZKLBMIMNZFWNA</strong>
+    </section>
+
+    <section class="panel">
+      <h2>Personalize sua senha</h2>
+
+      <div class="controls">
+        <div class="length-control">
+          <h3>Número de caracteres</h3>
+          <div class="counter">
+            <button id="decrease" aria-label="Diminuir">−</button>
+            <span id="length">13</span>
+            <button id="increase" aria-label="Aumentar">+</button>
+          </div>
+        </div>
+
+        <div class="options">
+          <h3>Características da senha</h3>
+          <label><input type="checkbox" id="uppercase" checked> Letras maiúsculas</label>
+          <label><input type="checkbox" id="lowercase"> Letras minúsculas</label>
+          <label><input type="checkbox" id="numbers"> Números</label>
+          <label><input type="checkbox" id="symbols"> Símbolos</label>
+        </div>
+
+        <div class="strength">
+          <h3>Força da senha</h3>
+          <div class="strength-bar"><div id="strength-fill"></div></div>
+          <div class="strength-labels">
+            <span>Fraca</span><span>Média</span><span>Forte</span>
+          </div>
+          <p id="crack-time">Um computador pode levar alguns dias para descobrir essa senha.</p>
+        </div>
+      </div>
+    </section>
+
+    <button class="generate" id="generate">Gerar nova senha</button>
+  </main>
+
+  <footer>
+    Projeto desenvolvido por <strong>Arthur Vinicius Thomé</strong> — Unidade 2 | Start by Alura
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
